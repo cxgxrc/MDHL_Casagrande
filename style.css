@@ -19,7 +19,7 @@ h1 {
     background-image: url(./assets/design1_image1.jpg);
     background-size: cover;
     background-position: center;
-    /* padding-top: 1em; */
+    padding-top: 0.4em;
     font-size: 5em;
 }
 
@@ -49,16 +49,21 @@ nav {
 
     display: inline-block;
     align-content: center;
+    position: absolute;
    
 }
 
 li {
     display: block;
-    padding: 2em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 1em;
 }
 
 section {
     display: inline-block;
+    position: absolute;
+    left: 15% ;
 }
 
 article {
@@ -66,11 +71,9 @@ article {
     padding: 1em;
 }
 
-/* p {
-    margin-right: 50%;
-} */
+#contact {
+    display: inline-block;
+    margin-top: 2em;
+}
 
-/* .ideals {
-        display: absolute;
-        right: 50%;
-} */
+
