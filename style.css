@@ -28,6 +28,7 @@ h1 {
     text-align: center;
     color: white;
     background-color: black;
+    padding: 1%;
 }
 
 
@@ -64,3 +65,12 @@ article {
     display: block;
     padding: 1em;
 }
+
+/* p {
+    margin-right: 50%;
+} */
+
+/* .ideals {
+        display: absolute;
+        right: 50%;
+} */
