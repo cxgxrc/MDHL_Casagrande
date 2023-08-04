@@ -1,17 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap);
+
 * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
 
-img {
-    max-width: 100%;
+:root {
+    font-family: 'Maven Pro', sans-serif;
 }
 
-.tittleBar {
-    text-align: center;
-    color: white;
-    background-color: black;
+img {
+    max-width: 100%;
 }
 
 h1 {
@@ -19,12 +19,48 @@ h1 {
     background-image: url(./assets/design1_image1.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 40px;
+    /* padding-top: 1em; */
+    font-size: 5em;
 }
 
+
+.tittleBar {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+
+
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 10em;
+    height: 10em ;
+    position: absolute;
+    /* background-color: aliceblue; */
+    right: 20%;
+    top: 38%;
     
     
+}
+
+
+nav {
+
+    display: inline-block;
+    align-content: center;
+   
+}
+
+li {
+    display: block;
+    padding: 2em;
+}
+
+section {
+    display: inline-block;
+}
+
+article {
+    display: block;
+    padding: 1em;
 }
