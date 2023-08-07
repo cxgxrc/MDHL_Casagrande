@@ -14,13 +14,21 @@ img {
     max-width: 100%;
 }
 
-h1 {
-    height: 300px;
+header {
+    display: flex;
+    flex-direction: column;
     background-image: url(./assets/design1_image1.jpg);
     background-size: cover;
     background-position: center;
+    
+
+}
+
+h1 {
     padding-top: 0.4em;
     font-size: 5em;
+   
+   
 }
 
 
@@ -36,34 +44,35 @@ h1 {
 #logo {
     width: 10em;
     height: 10em ;
-    position: absolute;
+    position: absolute; 
     /* background-color: aliceblue; */
     right: 20%;
     top: 38%;
-    
+    flex-wrap: wrap;
     
 }
 
+main {
+    display: flex;
+}
 
 nav {
+    
+    display: flex;
+    width: 10%;
 
-    display: inline-block;
-    align-content: center;
-    position: absolute;
    
 }
 
 li {
-    display: block;
     margin-top: 2em;
     margin-left: 2em;
     margin-right: 1em;
 }
 
 section {
-    display: inline-block;
-    position: absolute;
-    left: 15% ;
+    display: flex;
+    flex-direction: column;
 }
 
 article {
