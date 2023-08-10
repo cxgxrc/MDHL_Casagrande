@@ -91,6 +91,11 @@ article {
     padding: 1em;
 }
 
+table {
+    display: flex;
+    padding: 1em;
+}
+
 #contact {
     display: inline-block;
     margin-top: 2em;
@@ -100,5 +105,16 @@ article {
     display: none;
 }
 
+.moreInformation {
+    padding-top: 1em
+}
 
 
+#table {
+    flex-direction: row;
+}
+
+#tabla {
+    flex-direction: column;
+    padding: 1em;
+}
