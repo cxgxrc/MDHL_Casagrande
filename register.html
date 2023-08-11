@@ -7,19 +7,164 @@
 </head>
 <body>
     <main>
+        <h2>Registration Form</h2>
         <form action="./register.html">
-            <label for="fname">Players first name:</label>
-            <input type="text" name="fname" id="fname">
-            <label for="lname">Players last name:</label>
-            <input type="text" name="lname" id="lname">
+            <fieldset id="basicInfo">
+                <legend>Basic information </legend>
+            <div>
+                <label for="fname">Players first name:</label>
+                 <input type="text" name="fname" id="fname">
+            </div>
+            <div>
+                <label for="lname">Players last name:</label>
+                <input type="text" name="lname" id="lname">
+            </div>
+           <div>
+            <label for="bdate">Birth date:</label>
+            <input type="date" name="bdate" id="bdate">
+           </div>
+            </fieldset>
+            <fieldset id="location">
+                <legend>Location</legend>
             <label for="fname">Street address:</label>
             <input type="text" name="address" id="address">
             <label for="fname">City:</label>
             <input type="text" name="city" id="city">
             <label for="fname">Zip code:</label>
             <input type="number" name="zip" id="zip">
-            <label for="bdate">Birth date:</label>
-            <input type="date" name="bdate" id="bdate">
+        </fieldset>
+            
+            <fieldset id="gender">
+                <legend>Select the player gender:</legend>
+
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" checked />
+                    <label for="huey">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="dewey">Female</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="nbinary" name="gender" value="nbinary" />
+                    <label for="nbinary">Non-binary</label>
+                </div>
+            </fieldset>
+            <fieldset id="grade">
+            <legend>Grade:</legend>
+
+                <div>
+                    <input type="radio" id="pgrade" name="grade" value="pgrade" checked />
+                    <label for="pgrade">Pre-School</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="fgrade" name="grade" value="fgrade" checked />
+                    <label for="fgrade">1st Grade</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="sgrade" name="grade" value="sgrade" checked />
+                    <label for="sgrade">2nd Grade</label>
+                </div>
+                <div>
+                    <input type="radio" id="tgrade" name="grade" value="tgrade" checked />
+                    <label for="tgrade">3rd Grade</label>
+                </div>
+                <div>
+                    <input type="radio" id="fograde" name="grade" value="fograde" checked />
+                    <label for="fograde">4th Grade</label>
+                </div>
+                <div>
+                    <input type="radio" id="figrade" name="grade" value="figrade" checked />
+                    <label for="figrade">5th Grade</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Closest school:</legend>
+                <div>
+                    <input type="radio" name="aj" id="aj">
+                    <label for="aj">AJ Katzenmaier</label>
+                </div>
+                <div>
+                    <input type="radio" name="greenbay" id="greenbay">
+                    <label for="greenbay">Greenbay</label>
+                </div>
+                <div>
+                    <input type="radio" name="hart" id="hart">
+                    <label for="hart">Marjorie P Hart</label>
+                </div>
+                <div>
+                    <input type="radio" name="north" id="north">
+                    <label for="north">North Elementary</label>
+                </div>
+                <div>
+                    <input type="radio" name="south" id="south">
+                    <label for="south">South Elementary</label>
+                </div>
+                <div>
+                    <input type="radio" name="yeager" id="yeager">
+                    <label for="yeager">Howard A Yeager</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Uniform size</legend>
+                <div>
+                    <input type="radio" name="ys" id="ys">
+                    <label for="ys">Youth Small</label>
+                </div>
+                <div>
+                    <input type="radio" name="ym" id="ym">
+                    <label for="ym">Youth Medium</label>
+                </div>
+                <div>
+                    <input type="radio" name="yl" id="yl">
+                    <label for="yl">Youth Large</label>
+                </div>
+                <div>
+                    <input type="radio" name="s" id="s">
+                    <label for="s">Small</label>
+                </div>
+                <div>
+                    <input type="radio" name="m" id="m">
+                    <label for="m">Medium</label>
+                </div>
+                <div>
+                    <input type="radio" name="l" id="l">
+                    <label for="l">Large</label>
+                </div>
+                <div>
+                    <input type="radio" name="xl" id="xl">
+                    <label for="xl">Extra Large</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+               <legend>Permision to play</legend>
+               <div>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Agree with therms and conditions</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="autho" id="autho">
+                    <label for="autho">Authorize my children to play</label>
+                    </div>
+                    <div>
+                        <input type="text" name="parent" id="parent">
+                        <label for="parent">Parent/Guardian Signature</label>
+                    </div>
+                    <div>
+                        <input type="date" name="sdate" id="sdate">
+                    </div>
+            </fieldset>
+
+            <input type="submit" value="Submit">
             
 
 
