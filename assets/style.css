@@ -4,6 +4,8 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+    scroll-behavior: smooth;
+
 }
 
 :root {
@@ -25,11 +27,16 @@ header {
 }
 
 h1 {
-    padding-top: 0.4em;
-    padding-bottom: 0.8em;
-    font-size: 5em;
+    padding-top: 0.4rem;
+    padding-bottom: 0.8rem;
+    font-size: 5rem;
    
    
+}
+
+h2 {
+    top: 0px;
+    position: sticky;
 }
 
 
@@ -38,13 +45,15 @@ h1 {
     color: white;
     background-color: black;
     padding: 1%;
+    
+    
 }
 
 
 
 #logo {
-    width: 10em;
-    height: 10em ;
+    width: 10rem;
+    height: 10rem ;
     /* position: absolute; 
     right: 20%;
     top: 38%;
@@ -60,23 +69,37 @@ main {
     display: flex;
 }
 
-nav {
-    
-    display: flex;
-    width: 10%;
-
-   
+a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
+nav {
+    width: 10rem;
+    height: 25rem;
+    top: 0px;
+    position:sticky;
+    align-items: center;
+    font-size: large;
+    background-color: black;
+    border-radius: 0% 0px 60px 0%;
+    
+
+    
+}
+
+
+
 li {
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 1em;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
 }
 
 li::marker {
     display: none;
-    color: aliceblue;
+    color: black;
+   
 }
 
 /* como le saco el color a los markers??  */
@@ -88,17 +111,33 @@ section {
 
 article {
     display: block;
-    padding: 1em;
+    padding: 1rem;
 }
 
 table {
     display: flex;
-    padding: 1em;
+    padding: 1rem;
 }
 
-#contact {
-    display: inline-block;
-    margin-top: 2em;
+form {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+fieldset {
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 8rem;
+    flex-grow: 2;
+
+ }
+
+legend {
+    font-size: larger;
 }
 
 .none {
@@ -110,11 +149,21 @@ table {
 }
 
 
+
+.tform {
+    padding: 0.5rem;
+}
+
 #table {
     flex-direction: row;
 }
 
 #tabla {
     flex-direction: column;
-    padding: 1em;
+    padding: 1rem;
+}
+
+#contact {
+    display: inline-block;
+    margin-top: 2rem;
 }
