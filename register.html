@@ -2,40 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Registration forms</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <header>
+        <h1>Mighty Ducks Hockey League</h1>
+        <img src="./assets/logo.png" alt="logo" id="logo">
+        <h2 class="tittleBar">Registration Form</h2>
+    </header>
     <main>
-        <h2>Registration Form</h2>
+        <nav>
+            <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="./game_info.html">Game Information</a></li>
+            <li><a href="./rules.html">Rules</a></li>
+            <li><a href="./about.html">About MDHL</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
         <form action="./register.html">
             <fieldset id="basicInfo">
-                <legend>Basic information </legend>
-            <div>
-                <label for="fname">Players first name:</label>
+                <legend>Player information </legend>
+            <div class="tform">
+                <label for="fname">First name:</label>
                  <input type="text" name="fname" id="fname">
             </div>
-            <div>
-                <label for="lname">Players last name:</label>
+            <div class="tform">
+                <label for="lname">Last name:</label>
                 <input type="text" name="lname" id="lname">
             </div>
-           <div>
+           <div class="tform">
             <label for="bdate">Birth date:</label>
             <input type="date" name="bdate" id="bdate">
            </div>
             </fieldset>
+
             <fieldset id="location">
                 <legend>Location</legend>
+                <div class="tform">
             <label for="fname">Street address:</label>
             <input type="text" name="address" id="address">
+                </div>
+                <div class="tform">
             <label for="fname">City:</label>
             <input type="text" name="city" id="city">
+                </div>
+                <div class="tform"></div>
             <label for="fname">Zip code:</label>
             <input type="number" name="zip" id="zip">
+                </div>
         </fieldset>
             
             <fieldset id="gender">
-                <legend>Select the player gender:</legend>
+                <legend>Gender</legend>
 
                 <div>
                     <input type="radio" id="male" name="gender" value="male" checked />
@@ -53,7 +75,7 @@
                 </div>
             </fieldset>
             <fieldset id="grade">
-            <legend>Grade:</legend>
+            <legend>Grade</legend>
 
                 <div>
                     <input type="radio" id="pgrade" name="grade" value="pgrade" checked />
@@ -85,29 +107,29 @@
             </fieldset>
 
             <fieldset>
-                <legend>Closest school:</legend>
+                <legend>Closest school</legend>
                 <div>
-                    <input type="radio" name="aj" id="aj">
+                    <input type="radio" value="aj" id="aj" name="nearschool">
                     <label for="aj">AJ Katzenmaier</label>
                 </div>
                 <div>
-                    <input type="radio" name="greenbay" id="greenbay">
+                    <input type="radio" value="greenbay" id="greenbay" name="nearschool">
                     <label for="greenbay">Greenbay</label>
                 </div>
                 <div>
-                    <input type="radio" name="hart" id="hart">
+                    <input type="radio" value="hart" id="hart" name="nearschool">
                     <label for="hart">Marjorie P Hart</label>
                 </div>
                 <div>
-                    <input type="radio" name="north" id="north">
+                    <input type="radio" value="north" id="north" name="nearschool">
                     <label for="north">North Elementary</label>
                 </div>
                 <div>
-                    <input type="radio" name="south" id="south">
+                    <input type="radio" value="south" id="south" name="nearschool">
                     <label for="south">South Elementary</label>
                 </div>
                 <div>
-                    <input type="radio" name="yeager" id="yeager">
+                    <input type="radio" value="yeager" id="yeager" name="nearschool">
                     <label for="yeager">Howard A Yeager</label>
                 </div>
             </fieldset>
@@ -115,31 +137,31 @@
             <fieldset>
                 <legend>Uniform size</legend>
                 <div>
-                    <input type="radio" name="ys" id="ys">
+                    <input type="radio" value="ys" id="ys" name="size">
                     <label for="ys">Youth Small</label>
                 </div>
                 <div>
-                    <input type="radio" name="ym" id="ym">
+                    <input type="radio" value="ym" id="ym" name="size">
                     <label for="ym">Youth Medium</label>
                 </div>
                 <div>
-                    <input type="radio" name="yl" id="yl">
+                    <input type="radio" value="yl" id="yl" name="size">
                     <label for="yl">Youth Large</label>
                 </div>
                 <div>
-                    <input type="radio" name="s" id="s">
+                    <input type="radio" value="s" id="s" name="size">
                     <label for="s">Small</label>
                 </div>
                 <div>
-                    <input type="radio" name="m" id="m">
+                    <input type="radio" value="m" id="m" name="size">
                     <label for="m">Medium</label>
                 </div>
                 <div>
-                    <input type="radio" name="l" id="l">
+                    <input type="radio" value="l" id="l" name="size">
                     <label for="l">Large</label>
                 </div>
                 <div>
-                    <input type="radio" name="xl" id="xl">
+                    <input type="radio" value="xl" id="xl" name="size">
                     <label for="xl">Extra Large</label>
                 </div>
 
@@ -147,21 +169,23 @@
 
             <fieldset>
                <legend>Permision to play</legend>
-               <div>
-                <input type="checkbox" name="agree" id="agree">
+               <div class="tform">
                 <label for="agree">Agree with therms and conditions</label>
+                <input type="checkbox" name="agree" id="agree">
                 </div>
-                <div>
-                    <input type="checkbox" name="autho" id="autho">
+                <div class="tform">
                     <label for="autho">Authorize my children to play</label>
+                    <input type="checkbox" name="autho" id="autho">
                     </div>
-                    <div>
+                    <div class="tform">
                         <input type="text" name="parent" id="parent">
                         <label for="parent">Parent/Guardian Signature</label>
+                        
                     </div>
-                    <div>
+                    <!-- <div>
+                        <label for="parent">Date</label>
                         <input type="date" name="sdate" id="sdate">
-                    </div>
+                    </div> -->
             </fieldset>
 
             <input type="submit" value="Submit">
