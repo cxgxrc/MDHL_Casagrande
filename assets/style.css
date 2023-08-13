@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap);
+@media only screen and (max-width: 600px) {
+   
+  }
 
 * {
     box-sizing: border-box;
@@ -22,60 +25,92 @@ header {
     background-image: url(./design1_image1.jpg);
     background-size: cover;
     background-position: center;
+    height: 36vh;
+    
+    
     
 
 }
 
-h1 {
-    padding-top: 0.4rem;
-    padding-bottom: 0.8rem;
-    font-size: 5rem;
-   
-   
+main {
+    display: flex;
+    min-height: 54vh;
+    margin-bottom: 2rem;
 }
 
-h2 {
-    top: 0px;
-    position: sticky;
+
+footer {
+    min-height: 10vh;
+    background-color:black;
+    text-align: center;
+    color: aliceblue;
+    padding: 1em;
+    
 }
+
+
+/* h1 {
+    padding-top: 0.4rem;
+    padding-bottom: 8rem;
+    font-size: 5rem;
+    background-color: rgba(255, 255, 255, 0.529);
+    flex-shrink: 5;
+    
+   
+   
+} */
+
+h1 {
+    display: none;
+}
+
+
 
 
 .tittleBar {
     text-align: center;
     color: white;
     background-color: black;
-    padding: 1%;
-    
-    
+    padding: 0.5em;
 }
 
 
 
 #logo {
-    width: 10rem;
-    height: 10rem ;
+    width: 30vh;
+    height: 30vh ;
     /* position: absolute; 
     right: 20%;
     top: 38%;
     flex-wrap: wrap; */
-    position: relative;
-    left: 70%;
+    /* position: absolute;
+    right: 10em;
+    bottom: 48%; */
+    
     
 }
 
 /* No lo pude terminar de posicionar */
 
-main {
-    display: flex;
-}
+
 
 a {
+    transition: all 0.5s ease;
     text-decoration: none;
     color: aliceblue;
+
+}
+
+a:hover {
+    transition: all 0.5s ease;
+    font-size: larger;
+    color: yellow;
+    /* transition: 0.5s ease-out; */
 }
 
 nav {
-    width: 10rem;
+    transition: all 0.3s ease;
+    width: 19rem;
     height: 25rem;
     top: 0px;
     position:sticky;
@@ -83,10 +118,13 @@ nav {
     font-size: large;
     background-color: black;
     border-radius: 0% 0px 60px 0%;
+    display: flex;
     
 
     
 }
+
+
 
 
 
@@ -120,24 +158,54 @@ table {
 }
 
 form {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 3rem;
+    margin: 2rem;
+    
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
+    /* align-items: c; */
+    
 }
 
 fieldset {
+    display: flex;
     border-radius: 30px;
     padding: 1rem;
     margin: 1rem;
-    min-width: 8rem;
-    flex-grow: 2;
+    /* min-height: 20rem; */
+    flex-direction: column;
+    /* flex-grow: 2; */
+    flex-shrink: 1;
+    
+   
 
  }
 
 legend {
     font-size: larger;
+    color: black;
+}
+
+input[type=text] {
+    width: 100%;
+    
+    
+}
+
+input[type=number] {
+    width: 90%;
+    
+}
+
+input[type=submit] {
+    background-color: black;
+    width: 10rem;
+    height: 5rem;
+    color: aliceblue;
+    font-size: larger;
+    border-radius: 2rem;
+    
 }
 
 .none {
@@ -166,4 +234,16 @@ legend {
 #contact {
     display: inline-block;
     margin-top: 2rem;
+}
+
+#zip {
+    transform: translate(23px);
+}
+
+#send {
+    
+    transform: translate(2rem, -2rem);
+    border: none;
+    align-self: self-end;
+    
 }
