@@ -155,9 +155,10 @@ article {
 table {
     display: flex;
     padding: 1rem;
-    border: 2px;
     align-self: center;
 }
+
+
 
 form {
     padding: 3rem;
@@ -223,13 +224,9 @@ input[type=submit]:hover {
     display: none;
 }
 
-.moreInformation {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
-    
+.moreinfo>p {
+  
+    padding: 1rem;
 
 }
 
@@ -237,12 +234,15 @@ input[type=submit]:hover {
     display: flex;
     /* align-self: flex-start; */
     padding: 0.5rem;
+    justify-content: space-around;
+    
     
 }
 
-.info>p {
+/* .info>p {
     display: flex;
-}
+    
+} */
 
 
 
@@ -360,5 +360,18 @@ input[type=submit]:hover {
         align-self: flex-start;
 
      }
-    
+     #tabla {
+        
+        padding: 0rem;
+       
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-start;
+        
+        
+        
+    }
 }
