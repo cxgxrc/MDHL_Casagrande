@@ -108,7 +108,7 @@ a:hover {
 
 nav {
     transition: all 0.3s ease;
-    width: 19rem;
+    width: 7.6rem;
     height: 25rem;
     top: 0px;
     position:sticky;
@@ -143,6 +143,7 @@ li::marker {
 section {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 article {
@@ -256,15 +257,10 @@ input[type=submit]:hover {
 @media screen and (max-width: 600px) {
     
     header {
-        /* display: flex;
-        flex-direction: column;
-        background-image: url(./design1_image1.jpg);
-        background-size: cover;
-        background-position: center; */
+
         height: 100vh;
         width: 100vw;
         justify-content: space-between;
-        
         overflow: hidden;
     }
     #logo {
