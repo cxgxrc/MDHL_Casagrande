@@ -154,9 +154,25 @@ article {
 
 
 table {
-    display: flex;
+    /* display: flex; */
     padding: 1rem;
-    align-self: center;
+    align-self: right;
+    /* border: 0.5rem solid black; */
+    margin: 2rem;
+    font-size: larger;
+    
+}
+
+th {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+tr {
+    border: solid black;
+    text-align: center;
+    
 }
 
 
