@@ -155,6 +155,8 @@ article {
 table {
     display: flex;
     padding: 1rem;
+    border: 2px;
+    align-self: center;
 }
 
 form {
@@ -215,12 +217,31 @@ input[type=submit]:hover {
     color: yellow;
 }
 
+
+
 .none {
     display: none;
 }
 
 .moreInformation {
-    padding-top: 1em
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    
+
+}
+
+.info {
+    display: flex;
+    /* align-self: flex-start; */
+    padding: 0.5rem;
+    
+}
+
+.info>p {
+    display: flex;
 }
 
 
@@ -235,11 +256,15 @@ input[type=submit]:hover {
 
 #table {
     flex-direction: row;
+    max-width: 100%;
+
 }
 
 #tabla {
+    display: flex;
     flex-direction: column;
     padding: 1rem;
+    max-width: 100%;
 }
 
 #contact {
