@@ -151,6 +151,7 @@ article {
     padding: 1rem;
 }
 
+
 table {
     display: flex;
     padding: 1rem;
@@ -228,6 +229,10 @@ input[type=submit]:hover {
     padding: 0.5rem;
 }
 
+.mail {
+    color:darkkhaki;
+}
+
 #table {
     flex-direction: row;
 }
@@ -252,6 +257,14 @@ input[type=submit]:hover {
     border: none;
     align-self: self-end;
     
+}
+
+#contact {
+    padding: 1rem;
+    margin: 1rem;
+    display:flex;
+    align-self: flex-start;
+
 }
 
 @media screen and (max-width: 600px) {
