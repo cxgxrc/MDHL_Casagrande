@@ -223,9 +223,33 @@ span {
    font-weight: bolder;
 }
 
+iframe {
+    width: 100%;
+}
+
+
 .tittle {
     text-align: center;
 }
+
+.maps {
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    flex-wrap: wrap;
+    
+}
+
+.map {
+    padding: 1rem;
+}
+
+.map>h4 {
+    padding: 1rem;
+   
+}
+
+
 
 .none {
     display: none;
