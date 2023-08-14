@@ -287,6 +287,11 @@ iframe {
     
 }
 
+.regulation>p {
+padding: 1rem;
+}
+
+
 /* .info>p {
     display: flex;
     
@@ -313,6 +318,7 @@ iframe {
     flex-direction: column;
     padding: 1rem;
     max-width: 100%;
+    
 }
 
 #contact {
